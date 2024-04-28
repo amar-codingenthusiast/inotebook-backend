@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config();
 
 const fetchUser = (req, res, next) => {
 	const token = req.header("authtoken");
