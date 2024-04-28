@@ -4,7 +4,7 @@ const User = require("../models/User");
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config();
 const fetchUser = require("../middleware/fetchUser");
 
 router.post(
