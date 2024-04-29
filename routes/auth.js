@@ -5,7 +5,6 @@ const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
-const fetchUser = require("../middleware/fetchUser");
 
 router.post(
 	"/create-user",
